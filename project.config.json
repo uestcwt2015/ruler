@@ -7,10 +7,10 @@
 		"minified": true,
 		"newFeature": true
 	},
-	"miniprogramRoot": "./dist/",
+	"miniprogramRoot": "dist/",
 	"compileType": "miniprogram",
-	"appid": "touristappid",
-	"projectname": "ruler",
+	"appid": "wxe7fc63ee28fa3487",
+	"projectname": "%E5%B0%8F%E5%B0%BA%E5%AD%90",
 	"condition": {
 		"search": {
 			"current": -1,

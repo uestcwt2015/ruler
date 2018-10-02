@@ -21,7 +21,7 @@ export default {
 .button {
   display: inline-block;
   color: #aaa;
-  font-size: 14px;
+  font-size: 16px;
   border: 1px solid #aaa;
   padding: 5px 10px;
   border-radius: 6px;

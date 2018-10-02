@@ -1,10 +1,8 @@
 <template>
   <div class="container">
-    <div class="userinfo" @click="bindViewTap">
-      <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" background-size="cover" />
-      <div class="userinfo-nickname">
-        {{'你好，' + userInfo.nickName}}
-      </div>
+    <div class="userinfo">
+      <open-data class="userinfo-avatar" type="userAvatarUrl"></open-data>
+      <open-data type="userNickName"></open-data>
     </div>
 
     <Button text="开始使用" to="calc"></Button>
@@ -60,8 +58,8 @@ export default {
 }
 
 .userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
+  width: 200rpx;
+  height: 200rpx;
   margin: 20rpx;
   border-radius: 50%;
 }

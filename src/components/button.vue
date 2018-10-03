@@ -10,7 +10,7 @@ export default {
   methods: {
     changeRoute () {
       const url = '../' + this.to + '/main'
-      console.log(url);
+      // console.log(url);
       wx.navigateTo({ url })
     }
   }

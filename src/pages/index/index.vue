@@ -25,27 +25,27 @@ export default {
   },
 
   methods: {
-    bindViewTap () {
-      const url = '../calc/main'
-      wx.navigateTo({ url })
-    },
-    getUserInfo () {
-      // 调用登录接口
-      wx.login({
-        success: () => {
-          wx.getUserInfo({
-            success: (res) => {
-              this.userInfo = res.userInfo
-              console.log(res.userInfo);
-            }
-          })
-        }
-      })
-    }
+    // bindViewTap () {
+    //   const url = '../calc/main'
+    //   wx.navigateTo({ url })
+    // },
+    // getUserInfo () {
+    //   // 调用登录接口
+    //   wx.login({
+    //     success: () => {
+    //       wx.getUserInfo({
+    //         success: (res) => {
+    //           this.userInfo = res.userInfo
+    //           console.log(res.userInfo);
+    //         }
+    //       })
+    //     }
+    //   })
+    // }
   },
   created () {
     // 调用应用实例的方法获取全局数据
-    this.getUserInfo()
+    // this.getUserInfo()
   }
 }
 </script>

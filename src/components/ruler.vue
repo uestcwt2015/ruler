@@ -6,8 +6,8 @@
 export default {
   data() {
     return {
-      canvasWidth: 0,
-      canvasHeight: 0,
+      canvasWidth: 360,
+      canvasHeight: 400,
       canvasCtx: ''
     }
   },
@@ -20,23 +20,19 @@ export default {
     drawRuler() {
       const ctx = this.canvasCtx;
       const lineSpace = 4;
-      let lineSum = 100;
+      let lineSum = 101;
 
       for (let i = 0; i < lineSum; i++) {
         let startPos = {
           x: 0,
-          y: parseInt(10 + i * 3.7) + 0.5
+          y: 10 + i * 6 * 1.075 * 0.9
         };
         let len = 0;
-        if (i === 0 ) {
+        if (i % 10 === 0) {
           len = 30;
-          this.drawText(ctx, i, {x: len + 10, y: 14 + i * 4});
+          this.drawText(ctx, i/10, {x: len + 10, y: 14 + i * 6 * 1.075 * 0.9});
         }
-        else if (i % 10 === 9) {
-          len = 30;
-          this.drawText(ctx, (i+1)/10, {x: len + 10, y: 14 + i * 3.7});
-        }
-        else if (i % 10 === 4) {
+        else if (i % 10 === 5) {
           len = 25;
         }
         else {
